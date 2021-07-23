@@ -10,7 +10,7 @@ import (
 
 func TestPackerHelloWorldExample(t *testing.T) {
     packerOptions := &packer.Options{
-        Template: "./build.json",
+        Template: "./build.json.pkr.hcl",
     }
 
     packer.BuildArtifact(t, packerOptions)
